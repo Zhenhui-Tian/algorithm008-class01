@@ -84,6 +84,7 @@ function|throw exception | return special value |
 |查询数据| removeFirst()| pollFirst() |
 | 查询数据不改变queue | getFirst()| peekFist()|
 
+add First 使用
 ``` java
 
 Dequeue<String> deque = new LinkList<String>();
@@ -100,6 +101,25 @@ while(deque.size() > 0) {
 }
 System.out.println(deque);
 ```
+
+addLast 使用
+``` java
+
+Dequeue<String> deque = new LinkList<String>();
+deque.addLast("a");
+deque.addLast("b");
+deque.addLast("c");
+System.out.println(deque);
+String str = deque.getLast();
+System.out.println(str);
+System.out.println(deque);
+
+while(deque.size() > 0) {
+    System.out.println(deque.removeLast());
+}
+System.out.println(deque);
+```
+
 #### 优先队列 定义及特点
 优先队列和队列的不同在于取出数的时候，优先队列是按照优先级取出 复杂度为O(logn)
 
