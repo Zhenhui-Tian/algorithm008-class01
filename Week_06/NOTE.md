@@ -13,3 +13,11 @@
 ### 动态规划的关键点
 
 找到状态转移公式
+
+###  5 easy step to DP
+
+1. define subproblem
+2. guess (part of solution)
+3. relate subproblem solutions
+4. recurse & memorize OR build DP table bottom-up
+5. solve original problem
